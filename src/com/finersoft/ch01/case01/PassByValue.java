@@ -1,4 +1,4 @@
-package com.finersoft.case01;
+package com.finersoft.ch01.case01;
 
 import java.awt.Point;
 /**

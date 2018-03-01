@@ -1,4 +1,4 @@
-package com.finersoft.case02;
+package com.finersoft.ch01.case02;
 
 /**
  * Ãû³Æ£º²âÊÔ
