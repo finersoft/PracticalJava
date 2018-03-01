@@ -1,10 +1,12 @@
 package com.finersoft.ch01.case04;
 
 import java.awt.Button;
+
 /**
- * 
+ * 名称：数组的测试类
+ * 说明：
  * @author Finersoft
- *
+ * @date 2018年3月1日
  */
 public class ArrayTest {
 

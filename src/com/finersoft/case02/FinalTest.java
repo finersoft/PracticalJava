@@ -1,8 +1,9 @@
 package com.finersoft.case02;
 /**
- * 
+ * 名称：圆形
+ * 说明：
  * @author Finersoft
- *
+ * @date 2018年3月1日
  */
 class Circle{
 	/**
@@ -23,9 +24,11 @@ class Circle{
 	
 }
 /**
- * 
+ * 名称：Final关键字作用于引用类型的测试
+ * 说明：测试引用类型的地址不可以改变，但是该地址指向的对象中的属性是可以变化的
+ * 即，不能new一个对象重新赋值给该final引用对象，但是可以调用对象方法来修改对象的内容
  * @author Finersoft
- *
+ * @date 2018年3月1日
  */
 public class FinalTest {
 	

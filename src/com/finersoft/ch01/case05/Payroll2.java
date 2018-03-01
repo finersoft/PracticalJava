@@ -1,9 +1,11 @@
 package com.finersoft.ch01.case05;
 
+
 /**
- * 
+ * 名称：重写一个雇员类
+ * 说明：程序猴不想每次算劳动所得的时候还去判断一下是什么职位的，直接让他薪水+奖金，简单粗暴
  * @author Finersoft
- *
+ * @date 2018年3月1日
  */
 interface Employee2 {
 	/**
@@ -20,6 +22,12 @@ interface Employee2 {
 	public int bonus();
 }
 
+/**
+ * 名称：经理类
+ * 说明：没有奖金，但是为了迎合有奖金的同事，而有一个为0元的奖金属性，这是个倒霉孩子
+ * @author Finersoft
+ * @date 2018年3月1日
+ */
 class Manager2 implements Employee2 {
 	public static final int MANAGER_SALARY = 4000;
 	public static final int MANAGER_BONUS = 0;
@@ -40,6 +48,13 @@ class Manager2 implements Employee2 {
 
 }
 
+/**
+ * 名称：程序猴类
+ * 说明：程序猴不只有奖金，他还修改了雇员的定义，让所有的雇员的劳动所得都有薪水+奖金
+ * 皮这一下你开心了？我觉得这程序猴会被打得很惨
+ * @author Finersoft
+ * @date 2018年3月1日
+ */
 class Programmer2 implements Employee2 {
 	public static final int PROGRAMMER_SALARY = 5000;
 	public static final int PROGRAMMER_BONUS = 10000;
@@ -64,10 +79,12 @@ class Programmer2 implements Employee2 {
 
 }
 
+
 /**
- * 
+ * 名称：不用判断雇员类型就可以简单粗暴计算薪金的类
+ * 说明：程序猴为了少写一句代码，把整个员工薪金定义都修改了，让所有人都有奖金这个收入，虽然好多人没有奖金
  * @author Finersoft
- *
+ * @date 2018年3月1日
  */
 public class Payroll2 {
 

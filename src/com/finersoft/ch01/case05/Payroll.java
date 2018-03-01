@@ -1,9 +1,11 @@
 package com.finersoft.ch01.case05;
 
+
 /**
- * 
+ * 名称：雇员类
+ * 说明：
  * @author Finersoft
- *
+ * @date 2018年3月1日
  */
 interface Employee {
 	/**
@@ -14,6 +16,12 @@ interface Employee {
 	public int salary();
 }
 
+/**
+ * 名称：经理类
+ * 说明：没有奖金的经理不是好经理
+ * @author Finersoft
+ * @date 2018年3月1日
+ */
 class Manager implements Employee {
 	public static final int MANAGER_SALARY = 4000;
 
@@ -28,6 +36,12 @@ class Manager implements Employee {
 
 }
 
+/**
+ * 名称：程序猴类
+ * 说明：有工资有奖金的猴比经理福利好
+ * @author Finersoft
+ * @date 2018年3月1日
+ */
 class Programmer implements Employee {
 	public static final int PROGRAMMER_SALARY = 5000;
 	public static final int PROGRAMMER_BONUS = 10000;
@@ -51,10 +65,12 @@ class Programmer implements Employee {
 
 }
 
+
 /**
- * 
+ * 名称：算劳动所得类
+ * 说明：薪水+奖金+。。。
  * @author Finersoft
- *
+ * @date 2018年3月1日
  */
 public class Payroll {
 

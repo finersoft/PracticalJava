@@ -3,10 +3,12 @@ package com.finersoft.ch01.case04;
 import java.awt.Button;
 import java.util.Vector;
 
+
 /**
- * 
+ * 名称：Vector的测试类
+ * 说明：
  * @author Finersoft
- *
+ * @date 2018年3月1日
  */
 public class VectorTest {
 
