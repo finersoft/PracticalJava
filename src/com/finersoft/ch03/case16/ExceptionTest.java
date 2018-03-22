@@ -19,7 +19,7 @@ public class ExceptionTest {
 			System.out.println("Calling m1()");
 			et.m1();
 			 // 1 打印m1方法成功执行
-			System.out.println("Returning from call to m1()");
+			System.out.println("INFO----1:Returning from call to m1()");
 		} catch (Exception e) {
 			System.out.println("Caught IOException in main()");
 		}
@@ -36,7 +36,7 @@ public class ExceptionTest {
 			System.out.println("Calling m3()");
 			m3(true);
 			 // 2 打印m3方法成功执行
-			System.out.println("Returning from call to m3()");
+			System.out.println("INFO----2:Returning from call to m3()");
 		} catch (IOException e) {
 			System.out.println("Caught IOException in " + "m1()...rethrowing");
 			 // 3 向m1方法调用者抛出IO异常
@@ -45,7 +45,7 @@ public class ExceptionTest {
 			System.out.println("In finally for m1()");
 		}
 		// 4 打印m1方法退出
-		System.out.println("Exiting m1()"); 
+		System.out.println("INFO----4:Exiting m1()"); 
 	}
 
 	public void m2() {
@@ -53,8 +53,8 @@ public class ExceptionTest {
 		try {
 			Vector v = new Vector(5);
 		} catch (IllegalArgumentException iae) {
-			 // 5 
-			System.out.println("Caught " + "IllegalArgumentException in m2()");
+			 // 5 输出捕获异常的操作
+			System.out.println("INFO----5:Caught " + "IllegalArgumentException in m2()");
 		} finally {
 			System.out.println("In finally for m2()");
 		}
@@ -72,7 +72,7 @@ public class ExceptionTest {
 			System.out.println("In finally for m3()");
 		}
 		// 6
-		System.out.println("Exiting m3()"); 
+		System.out.println("INFO----6:Exiting m3()"); 
 	}
 
 }
